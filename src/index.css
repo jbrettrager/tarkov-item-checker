@@ -1,13 +1,74 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1e1e1e;
+  color: #948362;
+  font-family: "Exo", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page-title {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+.item-search {
+  background-color: #1e1e1e;
+  border: 1px solid #948362;
+  color:whitesmoke;
+}
+.item-table {
+  table-layout:auto;
+  width: 100%;
+  white-space:nowrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #8d8d8d;
+  color: whitesmoke;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #383838;
+}
+
+a {
+  color: lightblue;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.long-name {
+color:whitesmoke;
+}
+
+.short-name {
+font-size: 1.4rem;
+}
+
+.trader-img {
+  width: 5rem;
+}
+
+.flea-banned {
+  color:red;
+}
+
+.long-name {
+  word-wrap:normal;
 }
