@@ -90,8 +90,8 @@ export default function checkHighestTrader(item: ItemType) {
   }
   if (filteredHighestPrice.stringPrice.length > 3) {
     let newString: Array<string> = [];
-    let strLength: number = filteredHighestPrice.stringPriceRUB.length;
-    let counter: number  = filteredHighestPrice.stringPriceRUB.length;
+    let strLength: number = filteredHighestPrice.stringPrice.length;
+    let counter: number  = filteredHighestPrice.stringPrice.length;
     let subCount = 0;
     for (let i = strLength - 1; i > -1; i--) {
       newString.unshift(filteredHighestPrice.stringPrice[i]);
@@ -107,8 +107,8 @@ export default function checkHighestTrader(item: ItemType) {
   }
   if (filteredHighestPrice.stringPriceFlea.length > 3) {
     let newString: Array<string> = [];
-    let strLength: number = filteredHighestPrice.stringPriceRUB.length;
-    let counter: number  = filteredHighestPrice.stringPriceRUB.length;
+    let strLength: number = filteredHighestPrice.stringPriceFlea.length;
+    let counter: number  = filteredHighestPrice.stringPriceFlea.length;
     let subCount = 0;
     for (let i = strLength - 1; i > -1; i--) {
       newString.unshift(filteredHighestPrice.stringPriceFlea[i]);

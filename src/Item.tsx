@@ -4,12 +4,15 @@ import {ItemType, ItemDb} from "./types"
 
 export default function Item(props: any) {
   const prices = checkHighestTrader(props.item);
+  const type = props.item.properties
+
   return (
-    <tr>
+    <tr onClick={() => console.log(type)}>
       <td>
         <img src={props.item.gridImageLink}></img>
       </td>
       <td>
+        <div className="item-type"></div>
         <div className="short-name">{props.item.shortName}</div>
         <div className="long-name">{props.item.name}</div>
       </td>

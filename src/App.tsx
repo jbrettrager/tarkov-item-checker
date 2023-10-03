@@ -36,7 +36,6 @@ export default function App() {
         });
         const result = await response.json();
         setItemData(result.data.items);
-        console.log(result.data.items)
       } catch (error) {
         console.error("Error fetching data", error);
       }
@@ -75,7 +74,7 @@ export default function App() {
                 <div>
                   {
                     itemData.filter((item) => {
-                      return item.shortName.toLowerCase().includes(searchText);
+                      return item.shortName.toLowerCase().includes(searchText) || item.name.toLowerCase().includes(searchText);
                     }).length
                   }{" "}
                   Items Found
